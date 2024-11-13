@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Recipe App</h1>
+      <div class="search-form-container">
+        <input id="searchInput" type="text" placeholder="Search for recipes..." />
+        <button id="searchBtn">Search</button>
+      </div>
+    </header>
+    <main>
+      <section id="recipeResults">
+        <h2 class="search-results-heading">Search Results</h2>
+        <div class="list-container">
+          <ul id="recipe-list"></ul>
+        </div>
+      </section>
+      <section id="recipeDetails">
+        <h2>Recipe Details</h2>
+        <div id="recipeDetailsContainer"></div>
+        <button id="addToFavoritesBtn">Add to Favorites</button>
+      </section>
+      <section id="favorites">
+        <h2>Your Favorites</h2>
+        <ul id="favoritesList"></ul>
+      </section>
+    </main>
+  </body>
+</html>
