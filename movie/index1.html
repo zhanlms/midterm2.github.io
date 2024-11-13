@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A movie app where you can search and add movies to your watchlist">
+  <title>Movies App</title>
+  <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+  <header>
+    <h1>Movies App</h1>
+    <div class="search-form-container">
+      <input id="searchInput" type="text" placeholder="Search for movies..." autocomplete="off" />
+      <button id="searchBtn">Search</button>
+      <div id="suggestions" class="suggestions"></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="movieResults">
+      <h2 class="search-results-heading">Search Results</h2>
+      <div class="sort-options">
+        <select id="sortSelect">
+            <option value="popularity.desc">Popularity Descending</option>
+            <option value="popularity.asc">Popularity Ascending</option>
+            <option value="release_date.desc">Release Date Descending</option>
+            <option value="release_date.asc">Release Date Ascending</option>
+            <option value="vote_average.desc">Rating Descending</option>
+            <option value="vote_average.asc">Rating Ascending</option>
+          </select>
+      </div>
+      <div id="movie-list" class="movie-grid"></div>
+    </section>
+
+    <div id="movieDetails">
+      <div id="movieDetailsContainer">
+        <button id="closeDetails" onclick="closeMovieDetails()">Close</button>
+      </div>
+    </div>
+    
+
+    <div id="movieDetails">
+        <div id="movieDetailsContainer">
+          <button id="closeDetails" onclick="closeMovieDetails()">Close</button>
+        </div>
+      </div>
+
+      
+    <section id="watchlist">
+      <h2>Your Watchlist</h2>
+      <div id="watchlistContainer" class="movie-grid"></div>
+    </section>
+  </main>
+
+  <script src="./app1.js" defer></script>
+</body>
+</html>
