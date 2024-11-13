@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header>
+    <h1>Weather App</h1>
+    <div class="search-form-container">
+      <input id="searchInput" type="text" placeholder="Enter city..." autocomplete="on" />
+      <button id="searchBtn">Search</button>
+      <div id="suggestions" class="suggestions"></div>
+    </div>
+    <div id="locationBtnContainer">
+        <button id="useLocationBtn">Use Current Location</button>
+    </div>
+    <div>
+      <label for="unitSelect">Select Unit: </label>
+      <select id="unitSelect">
+        <option value="metric">Celsius</option>
+        <option value="imperial">Fahrenheit</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section id="currentWeather">
+      <h2>Current Weather</h2>
+    </section>
+
+    <section id="forecast">
+      <h2>5-Day Forecast</h2>
+    </section>
+    
+  </main>
+
+  <script src="app2.js" defer></script>
+</body>
+</html>
